@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vm"
+            type="com.example.aguaatv3.AguaViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/copo15"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/copo14"
+            app:layout_constraintTop_toBottomOf="@+id/copo10"
+            app:srcCompat="@drawable/copocinza50" />
+
+        <ImageView
+            android:id="@+id/copo12"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/copo13"
+            app:layout_constraintStart_toEndOf="@+id/copo11"
+            app:layout_constraintTop_toBottomOf="@+id/copo7"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/copo13"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/copo14"
+            app:layout_constraintStart_toEndOf="@+id/copo12"
+            app:layout_constraintTop_toBottomOf="@+id/copo8"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/copo14"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/copo15"
+            app:layout_constraintStart_toEndOf="@+id/copo13"
+            app:layout_constraintTop_toBottomOf="@+id/copo9"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/copo11"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/copo12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/copo6"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/copo8"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/copo13"
+            app:layout_constraintEnd_toStartOf="@+id/copo9"
+            app:layout_constraintStart_toEndOf="@+id/copo7"
+            app:layout_constraintTop_toBottomOf="@+id/copo3"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/copo7"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/copo12"
+            app:layout_constraintEnd_toStartOf="@+id/copo8"
+            app:layout_constraintStart_toEndOf="@+id/copo6"
+            app:layout_constraintTop_toBottomOf="@+id/copo2"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/copo6"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/copo11"
+            app:layout_constraintEnd_toStartOf="@+id/copo7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/copo1"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/copo10"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/copo15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/copo9"
+            app:layout_constraintTop_toBottomOf="@+id/copo5"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/copo9"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/copo14"
+            app:layout_constraintEnd_toStartOf="@+id/copo10"
+            app:layout_constraintStart_toEndOf="@+id/copo8"
+            app:layout_constraintTop_toBottomOf="@+id/copo4"
+            app:srcCompat="@drawable/copocinza" />
+
+        <TextView
+            android:id="@+id/textPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Peso"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/editPeso"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editPeso"
+            android:layout_width="173dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:text="@{vm.Peso()}"
+            app:layout_constraintEnd_toStartOf="@+id/buttonCalc"
+            app:layout_constraintStart_toEndOf="@+id/textPeso"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Peso" />
+
+        <Button
+            android:id="@+id/buttonCalc"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="8dp"
+            android:shadowColor="#003549"
+            android:text="Calcular"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#003549"
+            android:textColorHint="#003549"
+            android:textColorLink="#003549"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editPeso"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="#E6EFF3"
+            app:strokeColor="#003549" />
+
+        <ImageView
+            android:id="@+id/copo1"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="135dp"
+            app:layout_constraintEnd_toStartOf="@+id/copo2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/copo2"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="135dp"
+            app:layout_constraintEnd_toStartOf="@+id/copo3"
+            app:layout_constraintStart_toEndOf="@+id/copo1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/copo3"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="135dp"
+            app:layout_constraintEnd_toStartOf="@+id/copo4"
+            app:layout_constraintStart_toEndOf="@+id/copo2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/copo4"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="135dp"
+            app:layout_constraintEnd_toStartOf="@+id/copo5"
+            app:layout_constraintStart_toEndOf="@+id/copo3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/copo5"
+            android:layout_width="64dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/copo4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/copocinza" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="457dp"
+            android:layout_height="243dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@color/material_dynamic_primary20" />
+
+        <TextView
+            android:id="@+id/textViewBebeu"
+            android:layout_width="202dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:text="Bebeu até agora:"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/textBebeuValor"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+        <TextView
+            android:id="@+id/textBebeuValor"
+            android:layout_width="89dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="52dp"
+            android:text="0 ml"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+        <TextView
+            android:id="@+id/textFaltandoValor"
+            android:layout_width="190dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="100dp"
+            android:text="0 copos ou 0 ml"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewFaltando" />
+
+        <TextView
+            android:id="@+id/textViewFaltando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="100dp"
+            android:text="Faltando:"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textFaltandoValor"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/reset"
+            android:layout_width="78dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="150dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView17"
+            app:srcCompat="@drawable/reset" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

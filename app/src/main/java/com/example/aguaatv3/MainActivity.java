@@ -3,6 +3,7 @@ package com.example.aguaatv3;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
@@ -18,5 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         AguaViewModel lk = new ViewModelProvider(this).get(AguaViewModel.class);
         tela.setVm(lk);
+
+        RecyclerView recyclerView = findViewById(R.id.recycleviewCopos);
     }
 }

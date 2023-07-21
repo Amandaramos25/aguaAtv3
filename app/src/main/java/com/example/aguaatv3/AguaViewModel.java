@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel;
 public class AguaViewModel extends ViewModel {
 
     private MutableLiveData<String> Peso;
+    private MutableLiveData<String> AguaFaltando;
 
     public MutableLiveData<String> getPesoValor() {
         if(Peso==null){
@@ -14,7 +15,10 @@ public class AguaViewModel extends ViewModel {
         return Peso;
     }
 
-    public void Calcular(){
 
+
+    public void Calcular(){
+        int pesoInt = Integer.parseInt(Peso.getValue());
+        
     }
 }
